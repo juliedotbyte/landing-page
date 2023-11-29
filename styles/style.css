@@ -67,7 +67,6 @@
 }
 
 /* margins */
-
 .margin-left {
     margin-left: 180px;
 }
@@ -91,7 +90,7 @@ body {
 
 /* header */
 #header {
-    height: 110px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,10 +116,14 @@ body {
     text-decoration: none;
 }
 
+#main {
+    flex: 1;
+}
+
 /* hero */
 #hero {
     display: flex;
-    height: 600px;
+    min-height: 600px;
     justify-content: center;
     align-items: center;
     padding: 8px;
@@ -142,6 +145,13 @@ body {
 .buttons {
     padding: 12px 32px;
     border-radius: 8px;
+}
+
+.border-white {
+    border: 3px solid #FFFF;
+}
+
+.no-border {
     border: 0px;
 }
 
@@ -159,8 +169,8 @@ body {
 
 /* feature */
 #feature {
-    height: 500px;
-    padding: 16px;
+    min-height: 400px;
+    text-align: center;
 }
 
 #feature .text {
@@ -168,9 +178,17 @@ body {
     text-align: center;
 }
 
+#feature img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
 .container-row {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;   
 }
 
 .container-column {
@@ -182,4 +200,63 @@ body {
 
 .container-column p {
     text-align: center;
+    margin-bottom: 16px;
+}
+
+
+/* quote-panel */
+.quote-panel {
+    min-height: 400px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.message {
+    text-align: justify;
+}
+
+.author {
+    margin-left: auto;
+}
+
+/* action-panel */
+.action-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    padding: 8px;
+}
+
+.container {
+    height: 43%;
+    width: 60%;
+    border-radius: 8px;
+    padding: 8px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-action .buttons {
+    padding: 6px 40px;
+    border-radius: 8px;
+}
+
+/* footer */
+#footer {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
 }
